@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>BT Technology</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="./styles/global.css">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <style>
+
+.navigation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navigation__list li {
+  margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: white; /* Cor dos links */
+}
+
+.navigation__social {
+  width: 24px; /* Largura do ícone */
+  height: 24px; /* Altura do ícone */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Formato circular */
+  transition: background-color 0.3s ease;
+}
+
+
+.navigation__icon {
+  width: 16px; /* Tamanho do ícone */
+  height: 16px; /* Tamanho do ícone */
+}
+
+/* Estilo específico para o ícone do WhatsApp */
+.bi-whatsapp {
+  fill: #25D366; /* Cor específica do WhatsApp */
+}
+   
+
+ /* Estilo para o contêiner das imagens */
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 300px; /* Espaço entre o texto e as imagens */
+  margin-left: 100px; /* Adiciona um espaçamento lateral */
+  margin-right: 100px; /* Adiciona um espaçamento lateral */
+}
+
+/* Estilo para as imagens */
+.image-container img {
+  max-width: 22%; /* Tamanho das imagens */
+  height: 25%;
+  margin-right: 3px; /* Espaço entre as imagens */
+}
+
+    /* Estilos para centralizar o menu de navegação */
+    .navigation {
+      display: flex;
+      justify-content: center;
+    }
+    
+    /* Estilos para espaçamento entre os itens de navegação */
+    .navigation li {
+      margin: 0 10px;
+    }
+
+    /* Estilo para o contêiner das imagens */
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 150px; /* Espaço entre o texto e as imagens */
+      margin-left: 660px; /* Adiciona um espaçamento lateral */
+      margin-right: 10px; /* Adiciona um espaçamento lateral */
+    }
+
+    /* Estilo para as imagens */
+    .image-container img {
+      max-width: 35%; /* Tamanho das imagens */
+      height: 100%;
+      margin-left: 100px;
+      background-color: black; /* Adiciona um fundo preto */
+      padding: 7px; /* Adiciona preenchimento interno para o texto */
+ 
+  
+  
+    }
+
+    /* Estilo para o texto */
+    main h1 {
+      font-size: 40px; /* Tamanho da fonte */
+      text-align: center; /* Centraliza o texto */
+      margin-top: 180px; /* Espaço entre o topo da página e o texto */
+      color: #28a745;
+      margin-bottom: 20px; 
+      opacity: 0; /* Começa com opacidade 0 */
+      transform: translateY(-20px); /* Começa deslocado para cima */
+      animation: fadeInUp 1s forwards; /* Animação de fadeInUp por 1 segundo */
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(-30px); /* Inicia 20px acima */
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0); /* Termina na posição normal */
+      }
+    }
+    p {
+      font-size: 10px;
+      line-height: 1.5; /* Garante uma boa legibilidade */
+      text-align: center; /* Centraliza o parágrafo */
+    }
+    .subtext {
+      font-size: 5px;
+      margin-top: 10px; /* Espaço entre os parágrafos */
+      text-align: center; /* Centraliza o texto menor */
+    }
+
+    /* Estilo para o botão */
+    .btn {
+      display: inline-block;
+      padding: 10px 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #016b1a; /* Cor verde */
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 90px; /* Espaço entre o texto e o botão */
+      transition: background-color 0.3s;
+      display: block; /* Garante que o botão ocupe toda a largura disponível */
+      margin-left: auto; /* Centraliza o botão horizontalmente */
+      margin-right: auto; /* Centraliza o botão horizontalmente */
+      width: 200px; /* Largura do botão */
+    }
+    .btn:hover {
+      background-color: #218838; /* Cor verde mais escura para o hover */
+    }
+
+    /* Centraliza o botão */
+    .btn-container {
+      text-align: center;
+    }
+
+     h2 {
+      font-size: 40px; /* Tamanho da fonte */
+      text-align: center; /* Centraliza o texto */
+      margin-top: 190px; /* Espaço entre o topo da página e o texto */
+      color: #0cee40;
+      margin-bottom: 20px; 
+      opacity: 0; /* Começa com opacidade 0 */
+      transform: translateY(-20px); /* Começa deslocado para cima */
+      animation: fadeInUp 1s forwards; /* Animação de fadeInUp por 1 segundo */
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(-30px); /* Inicia 20px acima */
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0); /* Termina na posição normal */
+      }
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.5; /* Garante uma boa legibilidade */
+      text-align: center; /* Centraliza o parágrafo */
+    }
+    .subtext {
+      font-size: 18px;
+      margin-top: 10px; /* Espaço entre os parágrafos */
+      text-align: center; /* Centraliza o texto menor */
+    }
+
+    .card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(30% - 30px); /* Ajuste na largura dos cards */
+  text-align: center;
+  margin: 15px; /* Ajuste na margem dos cards */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 30px;
+  color: #0cee40;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.card p {
+  font-size: 20px;
+  color: black;
+}
+
+    .card:hover {
+      transform: translateY(-35px); /* Eleva o card ao passar o mouse */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+    }
+
+    .card h3 {
+      font-size: 25px; /* Tamanho da fonte do título */
+      color: #0cee40; /* Cor do título */
+      margin-bottom: 10px; /* Espaço abaixo do título */
+    }
+
+    .card p {
+      font-size: 20px; /* Tamanho da fonte do texto */
+      color: black; /* Cor do texto */
+    }
+
+    .card img {
+  width: 100px; /* Ajuste este valor para alterar a largura da imagem */
+  height: 100px; /* Ajuste este valor para alterar a altura da imagem */
+}
+
+/* Centraliza o contêiner */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Alinha itens ao topo */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilo para os itens dentro do contêiner */
+ .item {
+    max-width: 700px; /* largura máxima dos itens */
+    padding: 20px;
+    margin: 20px 20px 0; /* Ajuste de margens para reduzir o espaço acima do item */
+    text-align: left; /* Alinha texto à esquerda */
+    border-radius: 8px; /* Borda arredondada */
+
+  }
+
+  h3 {
+  font-size: 30px; /* Tamanho do título */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 150px; /* Ajusta o espaço entre o topo da página e o texto */
+  color: #0cee40; /* Cor do texto */
+  margin-bottom: 20px; /* Reduz o espaço abaixo do título */
+  opacity: 0; /* Começa com opacidade 0 */
+  transform: translateY(-20px); /* Inicia deslocado para cima */
+  animation: fadeInUp 1s forwards; /* Animação de fadeInUp por 1 segundo */
+}
+
+.item p {
+  font-size: 16px; /* Tamanho do texto */
+  color: white; /* Cor do texto */
+  line-height: 1.5; /* Altura da linha */
+}
+
+.item {
+  padding: 15px; /* Espaçamento interno */
+  border-radius: 8px; /* Borda arredondada */
+  width: calc(30% - 20px); /* Largura do item */
+  text-align: center; /* Centraliza o conteúdo */
+  margin: 10px; /* Espaçamento externo */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transições */
+}
+
+.item:hover {
+  transform: translateX(10px); /* Deslocamento ao passar o mouse */
+  color: #0cee40; /* Cor ao passar o mouse */
+}
+
+.main-text {
+  font-size: 17px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px; /* Aumenta a margem inferior para separar os parágrafos */
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 1s forwards;
+  background-color: black; /* Adiciona um fundo preto */
+  padding: 10px; /* Adiciona preenchimento interno para o texto */
+}
+
+
+.text {
+
+  font-size: 15px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 1s forwards;
+ 
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <div id="background">
+    <video loop autoplay muted>
+      <source src="./assets/backgroundSite.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div id="app">
+    <header>
+      <img src="./assets/btlogoSemFundo.png" alt="">
+      
+      <ul class="navigation">
+        <li>
+          <a href="index.html" class="navigation__link">INICIO</a>
+        </li>
+        <li>
+          <a href="projetos.html" class="navigation__link">PROJETOS</a>
+        </li>
+        <li>
+          <a href="sobrenos.html" class="navigation__link">SOBRE NÓS</a>
+        </li>
+      
+        <li>
+          <a href="contato.html" class="navigation__link">CONTATO</a>
+        </li>
+
+    
+          <ul class="navigation__list">
+            <li>
+              <a href="https://www.instagram.com/bt.technology1" class="navigation__link">
+                <div class="navigation__social">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="navigation__icon">
+                    <path fill="#EDF1F7" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                  </svg>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://api.whatsapp.com/message/V6NLUN4DPOA2J1?autoload=1&app_absent=0" class="navigation__link">
+                <div class="navigation__social">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp navigation__icon" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </header>
+
+    <main>
+
+        <div>
+
+            <div class="image-container">
+                <img src="./assets/carro.jpeg" alt="">
+        </div>
+        <div>
+            <div class="text">
+
+                Lucas Serrato fundador da BT Technology possui graduação em Análise e desenvolvimento de sistemas e Bacharelado em Engenharia de Software.
+
+        </div>
+
+
+
+      <div>
+        <div class="main-text">
+
+        BT Technology é uma empresa inovadora dedicada ao desenvolvimento de software e sites empresariais.  Combinamos criatividade com inteligência para oferecer soluções digitais que impulsionam negócios. Nosso foco está em transformar ideias em realidade, sempre com qualidade, amor e eficiência. 
+        Na BT, acreditamos que cada projeto é uma jornada única. Desde o momento em que nos reunimos para entender sua visão, até o lançamento final do produto, nossa equipe está comprometida em entregar excelência em cada etapa. Nosso processo começa com uma profunda imersão nas suas necessidades e objetivos, permitindo desenvolver uma estratégia personalizada que garante o sucesso do seu negócio.
+        Nossa abordagem inovadora se baseia na combinação de design criativo com tecnologias avançadas. Criamos interfaces intuitivas e experiências de usuário envolventes que não apenas atendem às expectativas, mas as superam. Cada linha de código é escrita com precisão e atenção aos detalhes, assegurando que nossos produtos sejam não apenas bonitos, mas também robustos e escaláveis.
+        
+      </div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
+</body>
+</html>
